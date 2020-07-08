@@ -20,12 +20,18 @@ var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or p
     "title": "{{ page.title }}",
     "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
     }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
+    var simplePipelineFunction = function (word) {
+        return word
+      }
+      lunr.Pipeline.registerFunction(simplePipelineFunction, 'simplePipelineFunction')
 
 var idx = lunr(function () {
     this.ref('id')
     this.field('title')
     this.field('body')
-
+    this.pipeline.reset();
+    this.pipeline.add(simplePipelineFunction,lunr.stopWordFilter,
+        lunr.stemmer)
     documents.forEach(function (doc) {
         this.add(doc)
     }, this)
