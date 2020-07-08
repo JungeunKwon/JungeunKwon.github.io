@@ -1,0 +1,56 @@
+# Site
+name: "Jungeun's tech bolg"
+title: "Jungeun"
+description: "간단한 기술 정리하는 블로그"
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+baseurl: ""
+url: "https://jungeunkwon.github.io/"
+disqus: "JungeunKwon"
+mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
+include: ["_pages"]
+permalink: /:title/
+cover: "assets/images/cover.png"
+
+# Authors
+authors:
+  Jungeun:
+    name: Jungeun Kwon
+    display_name: 쩡으니
+    email: wjdwjd95@gmail.com
+    web: https://github.com/JungeunKwon
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: "/category/:name/"
+
+# Pagination
+paginate: 6
+paginate_path: /page:num/
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
