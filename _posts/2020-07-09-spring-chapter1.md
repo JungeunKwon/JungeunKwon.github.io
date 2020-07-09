@@ -4,7 +4,6 @@ title: "클래스 로더와 WAR"
 author: Jungeun
 categories: [spring]
 tags: [spring, was, 스프링부트로배우는자바웹개발, 클래스로더, WAR]
-image: assets/images/cover.png
 description: "웹 애플리케이션에서 사용되는 클래스 로더와 WAR에 대한 설명"
 featured: false
 ---

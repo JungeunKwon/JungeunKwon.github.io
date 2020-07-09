@@ -4,7 +4,6 @@ title: "스프링 프레임워크"
 author: Jungeun
 categories: [spring]
 tags: [spring, 스프링부트로배우는자바웹개발, 프레임워크, IoC, DI, 제어의역전, 의존성주입]
-image: assets/images/cover.png
 description: "스프링 프레임워크와 MVC에 대한 개념 설명"
 featured: false
 ---

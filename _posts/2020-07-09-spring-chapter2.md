@@ -4,7 +4,6 @@ title: "서블릿"
 author: Jungeun
 categories: [spring]
 tags: [spring, 스프링부트로배우는자바웹개발, 서블릿, servlet, get, post, 쿠키, 세션]
-image: assets/images/cover.png
 description: "자바 웹 개발의 근간이 되는 서블릿과 서블릿에서 사용되는 객체들 (쿠키, 세션)에 대한 설명"
 featured: false
 ---
