@@ -8,8 +8,6 @@ description: "자바 웹 개발의 근간이 되는 서블릿과 서블릿에서
 featured: false
 ---
 
-[TOC]
-
 ### 서블릿
 
 서블릿은 JVM기반에서 웹 개발을 하기 위한 명세이자 API이다.  
