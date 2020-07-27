@@ -3,6 +3,8 @@ layout: default
 permalink: "/cate"
 ---
 
+<script src="{{site.baseurl}}/assets/js/lunr.js" charset="utf-8"></script>
+
 {% assign category = page.category | default: page.title %} {% for post in
 site.categories[category] %}
 <div class="wrapper">
