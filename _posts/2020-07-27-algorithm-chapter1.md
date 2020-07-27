@@ -9,8 +9,6 @@ featured: false
 
 ---
 
-![1507](assets/images/boj/1507_boj.png)
-
 ![1507](/assets/images/boj/1507_boj.png)
 
 <script src="https://gist.github.com/JungeunKwon/fe8e18ee06a1bcb3c93515cb716b3587.js"></script>
