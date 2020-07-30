@@ -3,7 +3,7 @@ layout: post
 title: "청소년 상어 - 19236"
 author: Jungeun
 categories: [algorithm]
-tags: [알고리즘, 백준, dfs]
+tags: [알고리즘, 백준, dfs, 구현]
 description: "백준 19236 청소년상어 풀이"
 featured: false
 
