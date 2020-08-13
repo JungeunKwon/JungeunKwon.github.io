@@ -10,6 +10,7 @@ disqus: "JungeunKwon"
 include: ["_pages"]
 permalink: /:title/
 cover: "assets/images/cover.png"
+goolge_analytics: "UA-175344734-1"
 
 # Authors
 authors:
