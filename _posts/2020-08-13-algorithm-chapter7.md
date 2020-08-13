@@ -3,7 +3,7 @@ layout: post
 title: "주사위 윷놀이 - 17825"
 author: Jungeun
 categories: [algorithm]
-tags: [알고리즘, 백준, 구현]
+tags: [알고리즘, 백준, 조합]
 description: "백준 17825 주사위 윷놀이 풀이"
 featured: false
 
