@@ -19,7 +19,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-
+    {% include analytics.html %}
     <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet" />
 
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
@@ -225,6 +225,6 @@
       src="//{{site.disqus}}.disqus.com/count.js"
     ></script>
     {% endif %}
-    {% include analytics.html %}
+  
   </body>
 </html>
