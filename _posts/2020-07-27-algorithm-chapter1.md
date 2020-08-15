@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "궁금한 민호 - 1507"
+title: "[백준] 궁금한 민호 - 1507"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 플로이드와샬]

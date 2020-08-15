@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "스타트 택시 - 19238"
+title: "[백준] 스타트 택시 - 19238"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, dfs, bfs, 구현]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "주사위 윷놀이 - 17825"
+title: "[백준] 주사위 윷놀이 - 17825"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 조합]

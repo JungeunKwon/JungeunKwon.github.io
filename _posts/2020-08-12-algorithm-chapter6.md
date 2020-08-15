@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "어른 상어 - 19237"
+title: "[백준] 어른 상어 - 19237"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 구현]

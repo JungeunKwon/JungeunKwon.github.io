@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "숫자고르기 - 2668"
+title: "[백준] 숫자고르기 - 2668"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, dfs]

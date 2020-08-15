@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "미네랄 - 2933"
+title: "[백준] 미네랄 - 2933"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, bfs, 구현]

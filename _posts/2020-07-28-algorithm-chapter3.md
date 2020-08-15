@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "역사 - 1613"
+title: "[백준] 역사 - 1613"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 플로이드와샬]

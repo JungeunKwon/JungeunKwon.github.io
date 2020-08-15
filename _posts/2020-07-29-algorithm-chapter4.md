@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "청소년 상어 - 19236"
+title: "[백준] 청소년 상어 - 19236"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, dfs, 구현]
