@@ -10,7 +10,7 @@ featured: false
 
 ![17825](/assets/images/boj/17472_boj.png)
 
-이번 문제는 bfs 와 크루스칼 알고리즘을 이용하여 풀이를 하였다. 크루스칼 알고리즘은 [[프로그래머스]섬 연결하기](/_posts/2020-08-19-algorithm-chapter10.md)에 설명을 참고하길 바란다. 
+이번 문제는 bfs 와 크루스칼 알고리즘을 이용하여 풀이를 하였다. 크루스칼 알고리즘은 [[프로그래머스]섬 연결하기](/algorithm-chapter10/)에 설명을 참고하길 바란다. 
 
 ```java
 boolean visited[][] = new boolean[N][M];
