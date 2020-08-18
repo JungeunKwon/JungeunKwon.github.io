@@ -347,7 +347,7 @@ span.post-read-more a:hover {
 blockquote {
   border-left: 4px solid #00ab6b;
   padding: 0 20px;
-  font-style: italic;
+  font-family: "Nanum Gothic Coding";
   color: rgba(0, 0, 0, 0.5);
 }
 
