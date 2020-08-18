@@ -34,7 +34,7 @@ pre {
   box-sizing: border-box;
   width: 100%;
   padding: 7px;
-  font-family: monospace, "Nanum Gothic Coding";
+  font-family: "Nanum Gothic Coding";
   font-size: 0.9rem;
   white-space: pre;
   overflow: auto;
