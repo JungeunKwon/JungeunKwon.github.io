@@ -16,3 +16,5 @@ featured: false
 finddistance 를 통해 각 사람마다 최솟값을 구해 min 값을 찾는 부분이 있는 데 모든 사람을 검색하기 때문에 시간이 많이 걸리는 듯 하다.  그
 
 <script src="https://gist.github.com/JungeunKwon/4c6d776707ac8ebab55fc08cffa84664.js"></script>
+
+*출처: 백준* https://www.acmicpc.net/problem/19238

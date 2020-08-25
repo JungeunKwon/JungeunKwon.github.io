@@ -18,3 +18,5 @@ featured: false
 플로이드 와샬 알고리즘을 참고하도록,,
 
 <script src="https://gist.github.com/JungeunKwon/fe8e18ee06a1bcb3c93515cb716b3587.js"></script>
+
+*출처: 백준* https://www.acmicpc.net/problem/1507

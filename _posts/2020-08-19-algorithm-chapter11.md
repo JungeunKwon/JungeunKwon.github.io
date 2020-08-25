@@ -123,3 +123,5 @@ if (bridgecnt != islandNum - 2)
 크루스칼 알고리즘은 모든 노드들이 연결되어야 하므로 하나라도 연결되지 않은 섬이 있다면 -1을 출력해준다. 또한 간선의 개수는 노드 - 1 개 여야 하므로 해당 조건을 걸어준다. 여기서 islandNum은  노드 + 1로 되어 있기 때문에 - 2를 해주었다. 
 
 <script src="https://gist.github.com/JungeunKwon/135284cdb8f30b0860bce58a368cd113.js"></script>
+
+*출처: 백준* https://www.acmicpc.net/problem/17472

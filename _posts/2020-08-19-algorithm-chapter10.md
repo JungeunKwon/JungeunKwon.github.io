@@ -138,3 +138,5 @@ span : 두 곳을 걸친다. 즉 ST 는 모든 노드를 걸치는 나무 , 모�
 위에서 설명한 크루스칼 알고리즘을 이용한다면 쉽게 풀 수 있는 문제이다. 
 
 <script src="https://gist.github.com/JungeunKwon/64a6dab9d3edc46861cf2e8b357fca4c.js"></script>
+
+*출처: 프로그래머스 코딩 테스트 연습,* https://programmers.co.kr/learn/challenges
