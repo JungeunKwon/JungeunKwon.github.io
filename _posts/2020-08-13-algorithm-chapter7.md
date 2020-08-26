@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 주사위 윷놀이 - 17825"
+title: "[백준] 주사위 윷놀이 - 17825 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 조합]
-description: "백준 17825 주사위 윷놀이 풀이"
+description: "백준 17825 주사위 윷놀이 풀이 (Java)"
 featured: false
 
 ---

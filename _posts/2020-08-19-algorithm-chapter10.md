@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[프로그래머스] 섬 연결하기 - 42861"
+title: "[프로그래머스] 섬 연결하기 - 42861 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 프로그래머스, 크루스칼, 그리디, 유니온파인드]
-description: "프로그래머스 42861 섬 연결하기 풀이"
+description: "프로그래머스 42861 섬 연결하기 풀이 (Java)"
 featured: false
 
 ---

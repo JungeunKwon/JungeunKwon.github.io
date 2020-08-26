@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 궁금한 민호 - 1507"
+title: "[백준] 궁금한 민호 - 1507 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 플로이드와샬]
-description: "백준 1507 궁금한 민호 풀이"
+description: "백준 1507 궁금한 민호 풀이 (Java)"
 featured: false
 
 ---

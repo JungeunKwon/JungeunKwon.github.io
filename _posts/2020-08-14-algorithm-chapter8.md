@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 미네랄 - 2933"
+title: "[백준] 미네랄 - 2933 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, bfs, 구현]
-description: "백준 2933 미네랄 풀이"
+description: "백준 2933 미네랄 풀이 (Java)"
 featured: false
 
 ---

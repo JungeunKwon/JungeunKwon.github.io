@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 어른 상어 - 19237"
+title: "[백준] 어른 상어 - 19237 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 구현]
-description: "백준 19237 어른 상어 풀이"
+description: "백준 19237 어른 상어 풀이 (Java)"
 featured: false
 
 ---

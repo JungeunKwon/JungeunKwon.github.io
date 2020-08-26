@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 다리만들기 2 - 17472"
+title: "[백준] 다리만들기 2 - 17472 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, 크루스칼, 그리디, 유니온파인드]
-description: "백준 17472 다리만들기 2 풀이"
+description: "백준 17472 다리만들기 2 풀이 (Java)"
 featured: false
 ---
 

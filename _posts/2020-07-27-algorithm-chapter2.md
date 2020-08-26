@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 숫자고르기 - 2668"
+title: "[백준] 숫자고르기 - 2668 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, dfs]
-description: "백준 2668 숫자고르기 풀이"
+description: "백준 2668 숫자고르기 풀이 (Java)"
 featured: false
 
 ---

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[백준] 스타트 택시 - 19238"
+title: "[백준] 스타트 택시 - 19238 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 백준, dfs, bfs, 구현]
-description: "백준 19238 스타트 택시 풀이"
+description: "백준 19238 스타트 택시 풀이 (Java)"
 featured: false
 
 ---

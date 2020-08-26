@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[프로그래머스] 단속카메라 - 42884"
+title: "[프로그래머스] 단속카메라 - 42884 (Java)"
 author: Jungeun
 categories: [algorithm]
 tags: [알고리즘, 프로그래머스, 그리디]
-description: "프로그래머스 42884 단속카메라 풀이"
+description: "프로그래머스 42884 단속카메라 풀이 (Java)"
 featured: false
 
 ---
