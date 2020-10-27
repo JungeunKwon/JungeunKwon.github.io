@@ -171,4 +171,4 @@ featured: false
 
 
 
-*출처: 이화여대 반효경님 강의* http://www.kocw.net/home/search/kemView.do?kemId=1046323
+*출처: [이화여대 반효경님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*
