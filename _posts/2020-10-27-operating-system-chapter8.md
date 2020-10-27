@@ -3,7 +3,7 @@ layout: post
 title: "[운영체제] System Structure & Program Execution 1"
 author: Jungeun
 categories: [operating-system]
-tags: [OS, 반효경님 강의]
+tags: [OS, 반효경 교수님 강의]
 description: "컴퓨터 시스템 구조, Mode bit, Timer, Device Controller, 입출력(I/O)의 수행, 동기식 입출력과 비동기식 입출력, 시스템콜(System Call), 인터럽트(Interrupt)"
 featured: false
 ---
@@ -106,4 +106,4 @@ featured: false
 
 
 
-*출처: [이화여대 반효경님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*
+*출처: [이화여대 반효경교수님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*

@@ -3,7 +3,7 @@ layout: post
 title: "[운영체제] Introduction to Operating Systems"
 author: Jungeun
 categories: [operating-system]
-tags: [OS, 반효경님 강의]
+tags: [OS, 반효경 교수님 강의]
 description: "운영체제란 무엇인가, 운영체제의 목적, 운영체제의 분류, 운영체제의 예, 운영체제의 구조"
 featured: false
 ---
@@ -171,4 +171,4 @@ featured: false
 
 
 
-*출처: [이화여대 반효경님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*
+*출처: [이화여대 반효경 교수님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*
