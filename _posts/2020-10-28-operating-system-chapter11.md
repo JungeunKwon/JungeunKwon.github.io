@@ -8,8 +8,6 @@ description: "프로세스 생성(Process Creation), 프로세스 종료(Process
 featured: false
 ---
 
-![process state](/assets/images/operating-system/thread.png)
-
 1. 프로세스 생성 (Process Creation)
    - 부모 프로세스(Parent process) 가 자식 프로세스(Childern process) 생성
    - 프로세스의 트리(계층 구조)형성
