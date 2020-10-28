@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "[운영체제] System Structure & Program Execution 1"
+title: "[운영체제] System Structure & Program Execution"
 author: Jungeun
 categories: [operating-system]
 tags: [OS, 반효경 교수님 강의]
-description: "컴퓨터 시스템 구조, Mode bit, Timer, Device Controller, 입출력(I/O)의 수행, 동기식 입출력과 비동기식 입출력, 시스템콜(System Call), 인터럽트(Interrupt)"
+description: "컴퓨터 시스템 구조, 인터럽트(Interrupt), 동기식 입출력과 비동기식 입출력, 시스템콜(System Call), DMA(Direct Memory Access), 서로 다른 입출력 명령어, 저장장치 계층 구조, 프로그램의 실행(메모리 load), 커널 주소 공간의 내용, 사용자 프로그램이 사용하는 함수, 프로그램의 실행"
 featured: false
+
 ---
 
 > 컴퓨터 시스템에서 하드웨어가 어떻게 동작하는 지 컴퓨터 프로그램들이 하드웨어를 위해서 어떻게 돌아가는 지 에 대한 설명
@@ -35,9 +36,9 @@ featured: false
    -  1 : 사용자 모드 - 사용자 프로그램 수행 -> 제한된 명령어만 수행 가능 (I/O접근, 메모리 접근 불가)
 
    -  0 : 모니터 모드(= 커널 모드, 시스템 모드) - OS 코드 수행 -> 메모리 접근, I/O 접근 등 모든 명령어 수행 가능
-     - 보안을 해칠 수 있는 중요한 명령어는 모니터 모드에서만 수행 가능한 **특권명령**으로 규정
-     - Interrupt 나 Exception 발생시 하드웨어가 mode bit 을 0으로 바꿈
-     - 사용자 프로그램에게 CPU를 넘기기 전에 mode bit 을 1로 셋팅
+      - 보안을 해칠 수 있는 중요한 명령어는 모니터 모드에서만 수행 가능한 **특권명령**으로 규정
+      - Interrupt 나 Exception 발생시 하드웨어가 mode bit 을 0으로 바꿈
+      - 사용자 프로그램에게 CPU를 넘기기 전에 mode bit 을 1로 셋팅
 
 3. Timer
 
@@ -56,15 +57,17 @@ featured: false
    - I/O는 실제 디바이스와 local buffer 사이에서 일어난다.
    - Device controller 는 I/O가 끝났을 경우 interrupt 로 CPU에 그 사실을 알린다.
 
-5. DMA Controller
+5. DMA Controller (Direct Memory Access)
+
+   - 빠른 입출력 장치를 메모리에 가까운 속도로 처리하기 위해 사용
+   - CPU 의 중재 없이 device controller 가 device 의 buffer storage 의 내용을 메모리에 block 단위로 직접 전송
+   - 바이트 단위가 아니라 block 단위로 인터럽트를 발생시킴
 
    직접 메모리를 접근할 수 있는 컨트롤러, 원래는 CPU만 메모리에 접근 가능하지만 DMA를 통해 메모리를 접근 할 수 있도록 함.
 
    너무 잦은 I/O 인터럽트로 인해 CPU가 계속 중단되는 상황으로 오히려 속도가 느려지는 경우가 발생하여 비효율적임 -> I/O 들어오면 I/O는 인터럽트 걸고 CPU는 운영체제로 넘어가서 데이터를 메모리에 복사하는 과정때문
 
    그래서 DMA를 통해 중간중간 들어오는 I/O 데이터들을 메모리에 쌓아 두어 CPU는 자기가 하던 일을 계속 할 수 있게 해준다. 그리고 I/O데이터들이 메모리에 다 올려지면 CPU에게 알려준다. -> CPU 가 중간에 인터럽트 당하는 빈도가 줄어 듦
-
-   
 
 6. Memory Controller
 
@@ -103,7 +106,36 @@ featured: false
    1. 사용자 프로그램이 I/O 요청을 위해 OS 에게 시스템 콜을 한다. (소프트웨어 인터럽트)
    2. CPU 는 I/O 에게 요청한 작업을 수행하게 하고 CPU 는 하던 일을 계속 한다.
    3. I/O 는 요청한 일을 다 끝내면 CPU 에게 일을 끝냈다고 인터럽트를 건다. (하드웨어 인터럽트)
+   
+9. 동기식 입출려과 비동기식 입출력
 
+- 동기식 입출력 (synchronous I/O)
+  - I/O 요청 후 입출력 작업이 완료된 후에야 제어가 사용자 프로그램에 넘어감
+  - 구현 방법 1
+    - I/O가  끝날 때까지 CPU 를 낭비시킴 
+    - 매시점 하나의 I/O만 일어날 수 있음
+  - 구현 방법 2
+    - I/O가 완료될 때까지 해당 프로그램에게서 CPU를 빼앗음
+    - I/O 처리를 기다리는 중에 그 프로그램을 줄 세움
+    - 다른 프로그램에게 CPU를 줌
+    - CPU가 놀지 않을 수 있고 여러 I/O장치가 일을 할 수 도 있음
+- 비동기식 입출력 (asynchronous I/O)
+  - I/O가 시작된 후 입출력 작업이 끝나기를 기다리지 않고 제어가 사용자 프로그램에 즉시 넘어감
 
+10. 커널 주소 공간의 내용
+
+- code
+  - 커널 코드 
+  - 시스템 콜, 인트럽트 처리 코드
+  - 자원 관리를 위한 코드
+  - 편리한 서비스 제공을 위한 코드
+- data - 운영체제가 사용하는 여러 자료구조
+  - PCB - 각 프로그램마다 운영체제가 관리하기 위해 있는 자료 구조
+  - CPU
+  - mem
+  - disk
+- stack - 함수를 호출하거나 리턴할 때 사용, 사용자 프로그램들이 운영체제의 커널 함수를 불러서 쓸 때 / 사용자 프로그램이 각각 커널의 스택을 가진다.
+  - Process A 의 커널 스택
+  - Process B 의 커널 스택
 
 *출처: [이화여대 반효경교수님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*
