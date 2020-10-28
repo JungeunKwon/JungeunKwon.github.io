@@ -46,8 +46,8 @@ featured: false
 
      (1) OS 가 관리상 사용하는 정보
 
-     - Process state - 프로세스 상태 (ready, 등 ), Process ID - 프로세스마다 고유 아이디
-     - scheduling information, priority
+     	- Process state - 프로세스 상태 (ready, 등 ), Process ID - 프로세스마다 고유 아이디
+     	- scheduling information, priority
 
      (2) CPU 수행 관련 하드웨어 값
 
