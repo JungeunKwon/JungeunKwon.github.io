@@ -113,8 +113,70 @@ featured: false
    - n 개의 프로세스가 ready queue 에 있고 할당 시간이 q time unit 인 경우 각 프로세스는 최대 q time unit 단위로 CPU 시간의 1/n 을 얻는다. -> 어떤 프로세스도 (n-1)q time unit 이상 기다리지 않는다. 
    - q 가 아주 클 경우 :  FCFS와 같은 스케줄링이 된다.
    - q 가 아주 작을 경우 :  context switch 오버헤드가 커진다.
+   
+9. Multilevel Queue - 이 전에는 한줄로 cpu 줄 서기 였는 데 이 후부터는 여러줄로 줄을 선다
 
+   ![mqueue](/assets/images/operating-system/mqueue.png)
 
+   - Ready queue 를 여러 개로 분할
+     - foreground (interactive)
+     - background (batch - no human interaction)
+   - 각 큐는 독립적인 스케줄링 알고리즘을 가짐 - 줄의 특성에 맞는 큐별 스케쥴링 선택
+     - foreground - RR
+     - background - FCFS
+   - 큐에 대한 스케줄링이 필요
+     - Fixed priority scheduling
+       - 우선 순위 높은 줄이 비지 않으면 우선순위 낮은 줄은 cpu를 받지 못하는 기아 현상 발생
+     - Time slice
+       - 각 큐에 CPU time 을 적절한 비율로 할당
+       - ex ) 전체 CPU 시간의 80퍼는 우선순위 높은 줄 20 퍼는 우선순위 낮은 줄에 배분
+
+10. Multilevel Feedback Queue - 멀티레벨 큐는 줄 간의 이동(신분 상승)을 하지 못하는 문제가 있다.
+
+    ![mfqueue](/assets/images/operating-system/mfqueue.png)
+
+    - 프로세스가 다른 큐로 이동 가능
+    - 에이징(aging)을 이와 같은 방식으로 구현할 수 있다.
+    - Multilevel-feedback-queue scheduler 를 정의하는 파라미터들
+      - Queue 수
+      - 각 큐의 scheduling algorithm
+      - Process 를 상위 큐로 보내는 기준
+      - Process 를 하위 큐로 내쫓는 기준
+      - 프로세스가 CPU 서비스를 받으려 할 때 들어갈 큐를 결정하는 기준
+
+    ![exmfqueue](/assets/images/operating-system/exmfqueue.png)
+
+    - CPU 시간이 짧은 프로그램에게 우선순위를 더 많이 준다.
+    - CPU 사용 시간이 긴 지 짧은 지 예측이 필요가 없어진다.
+
+11. Multiple-Processor Scheduling
+
+    - CPU가 여러 개인 경우 스케줄링은 더욱 복잡해짐
+    - Homogeneous processor 인 경우
+      - Queue 에 한줄로 세워서 각 프로세서가 알아서 꺼내가게 할 수 있다.
+      - 반드시 특정 프로세서에서 수행되어야 하는 프로세스가 있는 경우에는 문제가 더 복잡해짐.
+    - Load sharing
+      - 일부 프로세서에 job이 몰리지 않도록 부하를 적절히 공유하는 메커니즘 필요
+      - 별개의 큐를 두는 방법 vs 공동 큐를 사용하는 방법
+      - 각각 CPU 마다 별도의 줄을 서게 하는 방식 모든 CPU가 적절히 일을 한다
+    - Symmetric Multiprocessing (SMP)
+      - 각 프로세서가 각자 알아서 스케줄링 결정 - 모든 CPU 가 대등
+    - Asymmetric multiprocessing
+      - 하나의 프로세서가 시스템 데이터의 접근과 공유를 책임지고 나머지 프로세서는 거기에 따름 - CPU가 여러개 있는 데 그 중 하나의 CPU가 전체적인 컨트롤을 담당
+
+12. Real-Time Scheduling 
+
+    - Hard real-time systems
+      - Hard real-time task 는 정해진 시간 안에 반드시 끝내도록 스케줄링해야 함
+    - Soft real-time computing
+      - Soft real-time task 는 일반 프로세스에 비해 높은 priority를 갖도록 해야 함
+
+13. Thread Scheduling
+
+    - Local Scheduling - os 가 하는 게 아니라 사용자 프로그램이 직접 스케줄링
+      - User level thread 의 경우 사용자 수준의 thread library 에 의해 어떤 thread 를 스케줄할지 결정
+    - Global Scheduling
+      - Kernel level thread의 경우 일반 프로세스와 마찬 가지로 커널의 단기 스케줄러가 어떤 thread 를 스케줄할지 결정
 
 *출처: [이화여대 반효경 교수님 강의]( http://www.kocw.net/home/search/kemView.do?kemId=1046323)*
 
