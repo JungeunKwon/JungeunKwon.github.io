@@ -80,7 +80,7 @@ featured: false
 
    - 하나의 프로세스가 critical section에 있을 때 다른 모든 프로세스는 critical section에 들어갈 수 없어야 한다. 
 
-     ![rocessrace2](/assets/images/operating-system/cirticalsection.png)
+     ![criticalsection](/assets/images/operating-system/criticalsection.png)
 
      Critical section : 공유 데이터에 접근하는 코드를 뜻한다. 
 
